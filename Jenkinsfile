@@ -14,7 +14,7 @@ node {
     stage('Test image') {
 
         app.inside {
-            sh 'python hello_world.rb'
+            sh 'python hello_world.py'
         }
     }
 }
