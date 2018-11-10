@@ -8,7 +8,7 @@ node {
 
     stage('Build image') {
 
-        app = docker.image('python:3.6')
+        app = docker.image('python:3.6.6')
     }
 
     stage('Test image') {
