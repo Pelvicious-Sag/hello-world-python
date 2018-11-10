@@ -8,13 +8,13 @@ node {
 
     stage('Build image') {
 
-        app = docker.image('python')
+        app = docker.image('python:3.6')
     }
 
     stage('Test image') {
 
         app.inside {
-            sh 'python hello_world.py'
+            sh 'python3.6 hello_world.py'
         }
     }
 }
